@@ -1,0 +1,273 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+header{
+	background: #092170;
+	color: white;
+	font-size: 15px;
+	font-family: "Harabara Mais Light";
+	padding: 10px 10px 10px 50px;
+	margin: auto;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo{
+	width: 100px;
+	display: block;
+	margin: auto;
+	float: left;
+}
+
+nav ul {
+	padding: 0 5%;
+	list-style: none;
+}
+
+ nav li {
+ 	display: inline-block;
+ 	margin-left: 6%;
+ 	margin-right: 3%: 
+ 	position: relative;
+	float: right;
+ }
+ nav a {
+ 	color: white;
+ 	text-decoration: none;
+ 	transition: .5s ease;
+ }
+
+ nav a:hover {
+ 	color: #DADDE5;
+ }
+
+
+
+
+ .sobrenos {
+    display:table;
+ 	align-self: center;
+ 	padding: 30px 30px 10px 50px;
+ 	margin: 5% 10% 5% 10%;
+ 	background-color: #F2F2F2;
+
+ 	text-align: justify;
+ }
+
+ .img_ej {
+ 	float: left;
+ 	width: 35%;
+ 	height: auto;
+ 	margin-right: 30px; 
+    display:table-cell;             /*I added this*/
+ }
+
+h2 { 
+	font-family: "Harabara Mais";
+	text-align: top;
+	display: inline-flex;
+	color: #092170;
+}
+
+.oqueeaprosperejr{
+ 	width: 60%;
+ 	font-family: "Harabara Mais Light";
+ 	font-size: 20px;
+ 	display: inline-flex;
+ }
+
+
+
+
+.servicos{
+	background: #0754D1;
+	padding: 2% 8% 5% 10%;
+	display: table;
+	width: 100%;
+}
+
+.solucoes{
+	color: white;
+	font-family: "Harabara Mais Light";
+	display: table;
+	margin: 30px 0px 60px;
+}
+
+.pessoas{
+	background: white;
+	border-radius: 12px;
+	font-family: "Futura Md BT";
+	font-size: 12px;
+	padding: 20px 25px 15px 25px;
+	margin-right: 3%;
+	margin-top: 30px;
+	width: 200px;
+	float: left;
+}
+
+.icon{
+	display: block;
+	margin: auto;
+	height: 64px;
+	width: auto;
+}
+
+.botao{
+	background: #092170;
+	border-radius: 12px;
+	width: 100%;
+	height: 60px;
+	color: white;
+	font-family: "Futura Md BT";
+	text-align: center;
+}
+
+
+
+
+
+.MVV {
+	font-size: 20px;
+	font-family: "Futura Md BT";
+	text-align: center;
+	margin: 30px;
+}
+
+.secsao4 {
+	background: white;
+	padding: 2% 8% 5% 10%;
+	display: table;
+
+}
+
+.missao {
+	background: white;
+	padding: 80px 20px 15px 25px;
+	display: table-cell;
+}
+
+.pMVV {
+ 	text-align: justify;
+	font-size: 18px;
+	font-family: "Futura Md BT"
+}
+
+
+
+
+.secsao5{
+	padding: 2% 8% 5% 10%;
+	display: table;
+}
+
+.fixed-bg{
+	
+	background-image: url("background.jpg");
+	min-height: 200px;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.parceiros{
+	padding: 30px 20px 20px 20px;
+	margin: 0px 0px 20px 80px;
+	background: white;
+	border-radius: 12px;
+	float: left;
+	width: 20%;
+	height: 130px;
+}
+
+.imgsecsao5{
+	display: block;
+	margin: auto;
+	width: auto;
+	width: 100%;
+}
+
+
+
+.box {
+	width:100%;
+	margin:40px auto;
+}
+.effect7{
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after{
+	content:"";
+    position:absolute; 
+    z-index: 99;
+    box-shadow:0 0 100px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+} 
+.effect7:after{
+    right:10px; 
+    left:auto; 
+    transform:skew(8deg) rotate(3deg);
+}
+
+
+
+hr{
+	display: block;
+	align: center;
+	margin: 30px 30px 30px 30px;
+}
+
+ footer {
+ 	font-family: "Harabara Mais";
+ 	background: #092170;
+ 	color: white;
+ 	width: 100%;
+ 	display: table;
+ 	padding: 2% 8% 5% 10%;
+ }
+
+ .footer{
+ 	display: table-cell;
+ 	width: 70%;
+ }
+
+ .footerlogo{
+ 	float: left;
+ 	max-width: 40%;
+ }
+
+input{
+	display: block;
+	border-radius: 12px;
+	color: #F2F2F2;
+	width: 40%;
+	padding: 10px 10px 10px 10px;
+}
+
+button{
+	color: white;
+	font-family: "Harabara Mais";
+	background: #092170;
+	border: white;
+	padding: 5px 5px 5px 5px;
+	width: 30px;
+	height: 20px;
+}
+
+
+@media only screen and (max-width: 800px){
+
+body{	
+	background-color: blue;
+}
+
+}
