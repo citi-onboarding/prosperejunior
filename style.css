@@ -245,12 +245,18 @@ hr{
  	max-width: 40%;
  }
 
-input{
+input, textarea{
 	display: block;
 	border-radius: 12px;
+	border-style: none;
 	color: #F2F2F2;
-	width: 40%;
-	padding: 10px 10px 10px 10px;
+	width: 120%;
+	padding: 10px;
+	background-color: #0754D1;
+	
+}
+textarea{
+	height: 80px;
 }
 
 button{
