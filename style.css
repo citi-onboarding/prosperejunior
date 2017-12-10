@@ -1,6 +1,6 @@
 html, body{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	margin: 0;
 }
 
@@ -48,9 +48,6 @@ nav ul {
  	color: #DADDE5;
  }
 
-
-
-
  .sobrenos {
     display:table;
  	align-self: center;
@@ -83,11 +80,8 @@ h2 {
  	display: inline-flex;
  }
 
-
-
-
 .servicos{
-	background: #0754D1;
+	background: #092170;
 	padding: 2% 8% 5% 10%;
 	display: table;
 	width: 100%;
@@ -119,7 +113,7 @@ h2 {
 	width: auto;
 }
 
-.botao{
+botao{
 	background: #092170;
 	border-radius: 12px;
 	width: 100%;
@@ -128,11 +122,6 @@ h2 {
 	font-family: "Futura Md BT";
 	text-align: center;
 }
-
-
-
-
-
 .MVV {
 	font-size: 20px;
 	font-family: "Futura Md BT";
@@ -159,16 +148,12 @@ h2 {
 	font-family: "Futura Md BT"
 }
 
-
-
-
 .secsao5{
 	padding: 2% 8% 5% 10%;
 	display: table;
 }
 
 .fixed-bg{
-	
 	background-image: url("background.jpg");
 	min-height: 200px;
 	background-attachment: fixed;
@@ -192,8 +177,6 @@ h2 {
 	width: 100%;
 }
 
-
-
 .box {
 	width:100%;
 	margin:40px auto;
@@ -201,6 +184,8 @@ h2 {
 .effect7{
     position:relative;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	background-image: url(Imagens/background1.png);
+	background-position: center;
 }
 .effect7:before, .effect7:after{
 	content:"";
@@ -218,8 +203,6 @@ h2 {
     transform:skew(8deg) rotate(3deg);
 }
 
-
-
 hr{
 	display: block;
 	align: center;
@@ -229,7 +212,7 @@ hr{
  footer {
  	font-family: "Harabara Mais";
  	background: #092170;
- 	color: white;
+ 	color: #092170;
  	width: 100%;
  	display: table;
  	padding: 2% 8% 5% 10%;
@@ -253,7 +236,6 @@ input, textarea{
 	width: 100%;
 	padding: 10px;
 	background-color: #0754D1;
-	
 }
 textarea{
 	height: 80px;
@@ -269,11 +251,8 @@ button{
 	height: 20px;
 }
 
-
-@media only screen and (max-width: 800px){
+/*@media only screen and (max-width: 800px){
 
 body{	
 	background-color: blue;
-}
-
-}
+}*/
