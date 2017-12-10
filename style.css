@@ -1,4 +1,4 @@
-html, body{
+body{
 	width: 100%;
 	height: auto;
 	margin: 0;
@@ -54,7 +54,6 @@ nav ul {
  	padding: 30px 30px 10px 50px;
  	margin: 5% 10% 5% 10%;
  	background-color: #F2F2F2;
-
  	text-align: justify;
  }
 
@@ -94,7 +93,7 @@ h2 {
 	margin: 30px 0px 60px;
 }
 
-.pessoas{
+.card{
 	background: white;
 	border-radius: 12px;
 	font-family: "Futura Md BT";
@@ -113,8 +112,19 @@ h2 {
 	width: auto;
 }
 
-botao{
+.botao{
 	background: #092170;
+	border-radius: 12px;
+	border-style: none;
+	width: 100%;
+	height: 60px;
+	color: white;
+	font-family: "Futura Md BT";
+	text-align: center;
+}
+.botaoformulario{
+	background: #092170;
+	border-style: solid;
 	border-radius: 12px;
 	width: 100%;
 	height: 60px;
@@ -122,27 +132,32 @@ botao{
 	font-family: "Futura Md BT";
 	text-align: center;
 }
-.MVV {
+
+.formulario{
+	width: 60%;
+}
+
+.tituloMVV {
 	font-size: 20px;
 	font-family: "Futura Md BT";
 	text-align: center;
 	margin: 30px;
 }
 
-.secsao4 {
+.valores {
 	background: white;
 	padding: 2% 8% 5% 10%;
 	display: table;
 
 }
 
-.missao {
+.missaovisaovalores {
 	background: white;
 	padding: 80px 20px 15px 25px;
 	display: table-cell;
 }
 
-.pMVV {
+.textoMVV {
  	text-align: justify;
 	font-size: 18px;
 	font-family: "Futura Md BT"
@@ -212,20 +227,10 @@ hr{
  footer {
  	font-family: "Harabara Mais";
  	background: #092170;
- 	color: #092170;
+ 	/*color: #092170;*/
  	width: 100%;
  	display: table;
  	padding: 2% 8% 5% 10%;
- }
-
- .footer{
- 	display: table-cell;
- 	width: 70%;
- }
-
- .footerlogo{
- 	float: left;
- 	max-width: 40%;
  }
 
 input, textarea{
@@ -241,16 +246,29 @@ textarea{
 	height: 80px;
 }
 
-button{
-	color: white;
+.tituloContato{
 	font-family: "Harabara Mais";
-	background: #092170;
-	border: white;
-	padding: 5px 5px 5px 5px;
-	width: 30px;
-	height: 20px;
+	text-align: top;
+	display: inline-flex;
+	color: #F2F2F2;
 }
 
+.logoFormulario{
+	width: 20%;
+}
+.endereco{
+	width: 40%;
+}
+.formulario{
+	background: #092170;
+	width: 40%;
+	font-family: "Futura Md BT";
+}
+.contato{
+	display: flex;
+	background-color: #092170;
+	width: 100%;
+}
 /*@media only screen and (max-width: 800px){
 
 body{	
