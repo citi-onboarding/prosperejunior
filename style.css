@@ -186,7 +186,6 @@ h2{
  	width: 35%;
  	height: auto;
  	margin-right: 30px; 
-    display:table-cell;             /*I added this*/
     display:table-cell;
  }
 
