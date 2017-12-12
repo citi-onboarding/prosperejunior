@@ -83,7 +83,7 @@ h2{
 .servicos{
 	background: #092170;
 	display: table;
-	padding-bottom: 5%;
+	padding: 2% 0% 5% 0%;
 	width: 100%;
 }
 .cardsServicos{
