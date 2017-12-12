@@ -47,6 +47,7 @@ nav ul {
  nav a:hover {
  	color: #DADDE5;
  }
+<<<<<<< HEAD
 
 
 
@@ -160,12 +161,23 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
 
 
 
+=======
+h2{
+	font-family: "Harabara Mais";
+	color: #092170;
+}
+.quemsomos{
+	width: 100%;
+	padding: 30px 0 10px 0;
+	background: white;
+}
+>>>>>>> 4eabbaf0dd9122f829c8e075954fa23c3736254f
  .sobrenos {
     display:table;
  	align-self: center;
  	padding: 30px 30px 10px 50px;
  	margin: 5% 10% 5% 10%;
- 	background-color: #F2F2F2;
+ 	background: #F2F2F2;
  	text-align: justify;
  }
 
@@ -175,14 +187,8 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
  	height: auto;
  	margin-right: 30px; 
     display:table-cell;             /*I added this*/
+    display:table-cell;
  }
-
-h2 { 
-	font-family: "Harabara Mais";
-	text-align: top;
-	display: inline-flex;
-	color: #092170;
-}
 
 .oqueeaprosperejr{
  	width: 60%;
@@ -193,17 +199,26 @@ h2 {
 
 .servicos{
 	background: #092170;
-	padding: 2% 8% 5% 10%;
 	display: table;
+	padding: 2% 0% 5% 0%;
 	width: 100%;
+}
+.cardsServicos{
+	width: 90%;
+	margin-left: 5%;
 }
 
 .solucoes{
 	color: white;
 	font-family: "Harabara Mais Light";
+<<<<<<< HEAD
 	display: flex;
 	justify-content: space-between;
 	margin: 30px 0px 60px;
+=======
+	display: table;
+	margin-left: 10%;
+>>>>>>> 4eabbaf0dd9122f829c8e075954fa23c3736254f
 }
 
 .card{
@@ -211,10 +226,9 @@ h2 {
 	border-radius: 12px;
 	font-family: "Futura Md BT";
 	font-size: 12px;
-	padding: 20px 25px 15px 25px;
-	margin-right: 3%;
-	margin-top: 30px;
-	width: 200px;
+	padding: 2%;
+	margin-left: 5%;
+	width: 15%;
 	float: left;
 }
 
@@ -222,6 +236,12 @@ h2 {
 	display: block;
 	margin: auto;
 	height: 64px;
+	width: auto;
+}
+.iconContato{
+	display: block;
+	margin: auto;
+	height: 2%;
 	width: auto;
 }
 
@@ -239,8 +259,8 @@ h2 {
 	background: #092170;
 	border-style: solid;
 	border-radius: 12px;
-	width: 100%;
-	height: 60px;
+	width: 20%;
+	height: 45px;
 	color: white;
 	font-family: "Futura Md BT";
 	text-align: center;
@@ -312,6 +332,7 @@ h2 {
 .effect7{
     position:relative;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	background: #092170;
 	background-image: url(Imagens/background1.png);
 	background-position: center;
 }
@@ -379,6 +400,11 @@ textarea{
 	background-color: #092170;
 	width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+/*@media only screen and (max-width: 800px){
+>>>>>>> 4eabbaf0dd9122f829c8e075954fa23c3736254f
 
 /*@media only screen and (max-width: 800px){
 body{	
