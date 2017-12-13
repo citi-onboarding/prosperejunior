@@ -5,6 +5,7 @@ body{
 }
 
 .nav{
+	z-index: 99;
 	border-bottom: 1px solid white;
 	background: #022170;
 	text-align: right;
