@@ -202,6 +202,13 @@
 		</footer>
 
 		<script type="text/javascript">
+
+var btn = document.getElementById('button');
+
+btn.onclick = function() {
+  var menu = document.getElementById('navbar');
+  menu.classList.toggle('open');
+}
 			
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -229,6 +236,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
 
 		</script>
 
