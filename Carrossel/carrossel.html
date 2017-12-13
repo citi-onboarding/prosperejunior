@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+		<title>Prospere Júnior</title>
+		<link rel="stylesheet" type="text/css" href="style3.css">
+	</head>
+	<body>
+
+<div class="mobile"><div class="slideshow-container">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="mySlides fade" align="center" style="display: block;">
+				  		<div class="cardsServicos">
+							<div class="card">
+								<img src="Images/icon1.png" alt="Ícone simbolizando finanças" class="icon">
+								<hr>
+								<h4>FINANÇAS</h4>
+								<p class="textocard">dolor sit amet, consectetuer
+									adipiscing elit. Aenean
+									commodo ligula eget dolor.
+									Aenean massa. Cum sociis
+									natoque penatibus et magnis
+									dis parturient montes,
+									nascetur ridiculus mus.
+									Donec quam felis.
+								</p>
+								<button class="botao">INVISTA DA SUA EMPRESA</button>
+							</div>
+						</div>
+				</div>
+
+				<div class="mySlides fade" align="center" style="display: block;">
+				  <div class="cardsServicos">
+							<div class="card">
+								<img src="Images/icon2.png" alt="Ícone simbolizando projetos" class="icon">
+								<hr>
+								<h4>PROJETOS</h4>
+								<p class="textocard">dolor sit amet, consectetuer
+									adipiscing elit. Aenean
+									commodo ligula eget dolor.
+									Aenean massa. Cum sociis
+									natoque penatibus et magnis
+									dis parturient montes,
+									nascetur ridiculus mus.
+									Donec quam felis.
+								</p>
+								<button class="botao">INVISTA DA SUA EMPRESA</button>
+							</div>
+						</div>
+				</div>
+
+				<div class="mySlides fade" align="center" style="display: block;">
+				  <div class="cardsServicos">
+							<div class="card">
+								<img src="Images/icon3.png" alt="Ícone simbolizando marketing" class="icon">
+								<hr>
+								<h4>MARKETING</h4>
+								<p class="textocard">dolor sit amet, consectetuer
+									adipiscing elit. Aenean
+									commodo ligula eget dolor.
+									Aenean massa. Cum sociis
+									natoque penatibus et magnis
+									dis parturient montes,
+									nascetur ridiculus mus.
+									Donec quam felis.
+								</p>
+								<button class="botao">INVISTA DA SUA EMPRESA</button>
+							</div>
+						</div>
+					</div>
+
+				<div class="mySlides fade" align="center" style="display: block;">
+				  <div class="cardsServicos">
+							<div class="card">
+								<img src="Images/icon4.png" alt="Ícone simbolizando gestão de pessoas" class="icon">
+								<hr>
+								<h4>GESTÃO DE PESSOAS</h4>
+								<p class="textocard">dolor sit amet, consectetuer
+									adipiscing elit. Aenean
+									commodo ligula eget dolor.
+									Aenean massa. Cum sociis
+									natoque penatibus et magnis
+									dis parturient montes,
+									nascetur ridiculus mus.
+									Donec quam felis.
+								</p>
+								<button class="botao">INVISTA DA SUA EMPRESA</button>
+							</div>
+						</div>
+				</div>
+
+
+
+</div></div>
+
+
+		<script type="text/javascript">
+			
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+		</script>
+	</body>
+	</html>
