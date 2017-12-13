@@ -439,7 +439,7 @@ input, textarea{
 	border-radius: 12px;
 	border-style: none;
 	color: #F2F2F2;
-	width: 100%;
+	width: 80%;
 	padding: 10px;
 	background-color: #0754D1;
 }
@@ -456,15 +456,34 @@ textarea{
 
 .logoFormulario{
 	width: 30%;
+	margin: 2% 2% 0% 2%;
 }
 .endereco{
 	width: 30%;
+	margin: 0% 2% 0% 2%;
 }
 .formulario{
-	width: 30%;
-	font-family: "Futura Md BT";
+	width: 40%;
+	margin: 0% 2% 0% 2%;
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+::-webkit-input-placeholder {
+   color: #F2F2F2;
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+:-moz-placeholder {
+   color: #F2F2F2;
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+::-moz-placeholder {
+   color: #F2F2F2;  
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+:-ms-input-placeholder {  
+   color: #F2F2F2;  
 }
 .contato{
+	font-family: "Harabara Mais Light";
 	display: flex;
 	background-color: #092170;
 	width: 100%;
