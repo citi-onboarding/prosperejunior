@@ -272,7 +272,24 @@ textarea{
 	width: 30%;
 	font-family: "Futura Md BT";
 }
+/*Propriedades para mudar a cor da letra do formulário*/
+::-webkit-input-placeholder {
+   color: #F2F2F2;
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+:-moz-placeholder {
+   color: #F2F2F2;
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+::-moz-placeholder {
+   color: #F2F2F2;  
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+:-ms-input-placeholder {  
+   color: #F2F2F2;  
+}
 .contato{
+	font-family: "Harabara Mais Light";
 	display: flex;
 	background-color: #092170;
 	width: 100%;
