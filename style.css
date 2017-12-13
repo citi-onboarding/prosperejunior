@@ -5,6 +5,7 @@ body{
 }
 
 .nav{
+	position: relative;
 	z-index: 99;
 	border-bottom: 1px solid white;
 	background: #022170;
@@ -17,9 +18,13 @@ body{
 .logo{
 	width: 10%;
     position: absolute;
+    margin-top: 3%;
     left: 3%;
 }
 .menu{
+    margin: 0 30px 0 0;
+    position: relative;
+    z-index: 1;
 }
 .menu a{
 	clear: right;
@@ -48,11 +53,15 @@ label{
 	label{
 		display: block;
 		cursor: pointer;
+		z-index: 2; /* adicionei isso */
+    	position: relative; /* e isso */
 	}
 	.menu{
 		text-align:center;
 		width: 100%;
 		display: none;
+		position: relative;
+    	z-index: 1;
 	}
 	.menu a{
 		display: block;
@@ -71,6 +80,8 @@ label{
 	}
 	#toggle:checked + .menu{
 		display: block;
+		z-index: 1; /* aqui */
+    	position: relative; /* aqui */
 	}
 }
 
@@ -81,6 +92,7 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
 .mySlides {display:none}
 
 .slider{
+	position: relative;
 	height: 10px;
 }
 
