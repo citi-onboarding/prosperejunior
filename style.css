@@ -4,50 +4,76 @@ body{
 	margin: 0;
 }
 
-header{
-	background: #092170;
+.nav{
+	border-bottom: 1px solid white;
+	background: #022170;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+	font-family: "Harabara Mais", sans-serif;
 	color: white;
-	font-size: 15px;
-	font-family: "Harabara Mais Light";
-	padding: 10px 10px 10px 50px;
-	margin: auto;
 }
-
-header::after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
 .logo{
-	width: 100px;
-	display: block;
-	margin: auto;
-	float: left;
+	width: 10%;
+    position: absolute;
+    top: 3%;
+    left: 3%;
 }
-
-nav ul {
-	padding: 0 5%;
-	list-style: none;
+.menu{
+	margin: 0 30px 0 0;
 }
-
- nav li {
- 	display: inline-block;
- 	margin-left: 6%;
- 	margin-right: 3%: 
- 	position: relative;
+.menu a{
+	clear: right;
+	text-decoration: none;
+	color: white;
+	margin: 0 10px;
+	line-height: 70px;
+}
+.titulo{
+	font-size: 20px;
+	display: none;
+}
+label{
+	margin: 0 40px 0 0;
+	font-size: 20px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
 	float: right;
- }
- nav a {
- 	color: white;
- 	text-decoration: none;
- 	transition: .5s ease;
- }
+}
+#toggle{
+	display: none;
+}
 
- nav a:hover {
- 	color: #DADDE5;
- }
-<<<<<<< HEAD
+@media only screen and (max-width: 650px) {
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	.menu{
+		text-align:center;
+		width: 100%;
+		display: none;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid #0754D1;
+		background: #022170;
+		margin: 0;
+		color: white;
+	}
+	.logo{
+		display: none;
+	}
+	.titulo{ 
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	}
+	#toggle:checked + .menu{
+		display: block;
+	}
+}
 
 
 
@@ -96,7 +122,7 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
   color: #f2f2f2;
   font-size: 45px;
   position: absolute;
-  padding: 0% 0% 5% 5%;
+  padding: 0% 0% 5% 7%;
   bottom: 8%;
   width: 100%;
   text-align: left;
@@ -154,30 +180,19 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+@media only screen and (max-width: 650px) {
+  .prev, .next{font-size:20px;}
+  .text {font-size: 13px}
+  .dot{height: 10px; width: 10px; margin: 0 1px;
+  }
 }
 
-
-
-
-=======
-h2{
-	font-family: "Harabara Mais";
-	color: #092170;
-}
-.quemsomos{
-	width: 100%;
-	padding: 30px 0 10px 0;
-	background: white;
-}
->>>>>>> 4eabbaf0dd9122f829c8e075954fa23c3736254f
- .sobrenos {
+.sobrenos {
     display:table;
  	align-self: center;
  	padding: 30px 30px 10px 50px;
  	margin: 5% 10% 5% 10%;
- 	background: #F2F2F2;
+ 	background-color: #F2F2F2;
  	text-align: justify;
  }
 
@@ -189,12 +204,38 @@ h2{
     display:table-cell;
  }
 
+h2{
+	font-family: "Harabara Mais";
+	color: #092170;
+}
+.quemsomos{
+	width: 100%;
+	padding: 30px 0 10px 0;
+	background: white;
+}
 .oqueeaprosperejr{
  	width: 60%;
  	font-family: "Harabara Mais Light";
  	font-size: 20px;
  	display: inline-flex;
  }
+@media only screen and (max-width: 650px){
+	.img_ej{
+		width: 100%;
+		display: block;
+    	margin: auto;
+	}
+	.quemsomos{
+		text-align: left;
+		width: 100%;
+	}
+	.oqueeaprosperejr{
+		text-align: justify;
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
 
 .servicos{
 	background: #092170;
@@ -210,14 +251,11 @@ h2{
 .solucoes{
 	color: white;
 	font-family: "Harabara Mais Light";
-<<<<<<< HEAD
 	display: flex;
 	justify-content: space-between;
 	margin: 30px 0px 60px;
-=======
 	display: table;
 	margin-left: 10%;
->>>>>>> 4eabbaf0dd9122f829c8e075954fa23c3736254f
 }
 
 .card{
@@ -226,8 +264,8 @@ h2{
 	font-family: "Futura Md BT";
 	font-size: 12px;
 	padding: 2%;
-	margin-left: 5%;
-	width: 15%;
+	margin-left: 3%;
+	width: 20%;
 	float: left;
 }
 
@@ -264,6 +302,19 @@ h2{
 	font-family: "Futura Md BT";
 	text-align: center;
 }
+@media only screen and (max-width: 650px){
+	.cardsServicos{
+		display: table;
+		justify-content: center;
+		flex-direction: row;
+		margin: auto;
+	}
+	.card{
+		display: table-row;
+		margin-top: 30px;
+		width: 60%;
+	}
+}
 
 .formulario{
 	width: 60%;
@@ -293,6 +344,14 @@ h2{
  	text-align: justify;
 	font-size: 18px;
 	font-family: "Futura Md BT"
+}
+
+@media only screen  and (max-width: 650px){
+	.missaovisaovalores{
+	margin: 30px;
+    display: block;
+    position: relative;
+	}
 }
 
 .secsao5{
@@ -351,6 +410,17 @@ h2{
     transform:skew(8deg) rotate(3deg);
 }
 
+@media only screen and (max-width: 650px){
+	.secsao5{
+	padding: 2% 8% 5% 10%;
+	display: table;
+	}
+	.parceiros{
+		width: 60%;
+		height: 190px;
+	}
+}
+
 hr{
 	display: block;
 	align: top;
@@ -399,13 +469,3 @@ textarea{
 	background-color: #092170;
 	width: 100%;
 }
-<<<<<<< HEAD
-=======
-
-/*@media only screen and (max-width: 800px){
->>>>>>> 4eabbaf0dd9122f829c8e075954fa23c3736254f
-
-/*@media only screen and (max-width: 800px){
-body{	
-	background-color: blue;
-}*/
