@@ -417,14 +417,52 @@ h2{
 	}
 }
 
+body{
+	width: 100%;
+	margin: 0;
+}
 .contato{
 	font-family: "Harabara Mais Light";
 	display: flex;
 	background-color: #092170;
-	width: 100%;
-	padding: 2% 1% 0% 12%;
+	padding: 2% 1% 2% 12%;
+	box-sizing: border-box;
 }
 
+.logoFormulario{
+	width: 20%;
+	display: block;
+	margin: auto;
+}
+
+.endereco{
+	width: 100%;
+	display: block;
+	margin-left: 10%;
+}
+
+.tituloContato{
+	margin-bottom: 20px;
+	font-family: "Harabara Mais";
+	display: inline-flex;
+	color: #F2F2F2;
+}
+.organizar{
+	display: block;
+    margin-bottom: 30px;
+}
+
+.iconContato{
+	height: 20px;
+	display: inline;
+}
+
+
+.textoContato{
+	display: inline;
+	color: white;
+	font-size: 15px;
+}
 
 input, textarea{
 	display: block;
@@ -439,23 +477,6 @@ textarea{
 	height: 80px;
 }
 
-.tituloContato{
-	font-family: "Harabara Mais";
-	text-align: top;
-	display: inline-flex;
-	color: #F2F2F2;
-}
-
-.logoFormulario{
-	width: 10%;
-	height: 10%;
-	display: inline;
-	margin: 2% 2% 0% 2%
-}
-.endereco{
-	width: 100%;
-	margin: 0% 2% 0% 2%
-}
 .formulario{
 	width: 100%;
 	margin: 0% 2% 0% 2%
@@ -487,33 +508,68 @@ textarea{
 	font-family: "Futura Md BT";
 	text-align: center;
 }
-
-@media only screen and (max-width: 650px){
-
-	.contato{
-		display: table;
-	}
-	.endereco{
-		display: table-row;
-		width: 100%;
-	}
-	.formulario{
-		display: table-row;
-		width: 100%;
-	}
+.logocontato{
+	display: block;
+	width: 100%;
+}
+.contato1{
+	background-color: #092170;
+	padding: 2% 1% 2% 12%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+    align-items: flex-end;
 }
 
-hr{
-	margin: 5% 0% 5% 0%;
+.linhafooter{
+	background: white;
 	display: block;
 	margin: auto;
 	width: 80%;
+	margin-bottom: 20px;
+}
+.paragrafo{
+	display: flex;
+	align-items: flex-start;
+}
+.copyright{
+	font-family: "Futura Md Bt";
+	font-size: 10px;
+	color: white;
+	display: inline;
+}
+.directioncolumn{
+	display: flex;
+	float: right;
+
+    align-items: flex-end;
+
 }
 
- footer {
- 	font-family: "Harabara Mais";
- 	background-color: #092170;
- 	color: #white;
- 	width: 100%;
-	height: 30%;
+.iconContato1{
+	height: 20px;
+	margin-left: 20px;
+	direction: column;
+
 }
+
+@media only screen and (max-width: 650px){
+	.logoFormulario{
+		display: none;
+	}
+
+	.contato{
+		display: block;
+		width: 100%
+	}
+	.endereco{
+		display: block;
+		width: 70%;
+		text-align: center;
+	}
+	.formulario{
+		display: block;
+		width: 100%;
+	}
+}
+
