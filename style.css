@@ -89,7 +89,7 @@ label{
 
 * {box-sizing:border-box}
 body {font-family: "Harabara Mais",sans-serif;margin:0}
-.mySlides {display:none}
+.mySlides:not(:first-child) {display:none}
 
 .slider{
 	position: relative;
@@ -167,7 +167,7 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation 
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -175,7 +175,7 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
   display: none;
   animation-duration: 1.5s;
 }
-
+*/
 .mySlides{
 	height: 20%;
 }
