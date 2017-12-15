@@ -88,8 +88,18 @@ label{
 
 
 * {box-sizing:border-box}
+<<<<<<< HEAD
 body {font-family: "Harabara Mais",sans-serif;margin:0}
 .mySlides:not(:first-child) {display:none}
+=======
+body {
+	font-family: "Harabara Mais",sans-serif;
+	margin:0;
+}
+.mySlides {
+	display:none
+}
+>>>>>>> e1486b855212de07f6fde8d958d6380268f55cf0
 
 .slider{
 	position: relative;
@@ -100,25 +110,25 @@ body {font-family: "Harabara Mais",sans-serif;margin:0}
 .slideshow-container {
 	background-size: cover;
 	height: 20%;
-  max-width: 100%;
-  position: relative;
-  margin: auto;
+  	max-width: 100%;
+  	position: relative;
+  	margin: auto;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: thin;
-  font-size: 60px;
-  text-shadow: 2px 2px 10px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: thin;
+	font-size: 60px;
+	text-shadow: 2px 2px 10px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
 }
 
 /* Position the "next button" to the right */
