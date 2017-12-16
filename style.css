@@ -2,6 +2,7 @@ body{
 	width: 100%;
 	height: auto;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 .nav{
@@ -89,12 +90,8 @@ label{
 
 * {box-sizing:border-box}
 
-body {font-family: "Harabara Mais",sans-serif;margin:0}
 .mySlides:not(:first-child) {display:none}
 
-body {
-	font-family: "Harabara Mais",sans-serif;
-	margin:0;
 }
 .mySlides {
 	display:none
@@ -264,10 +261,12 @@ h2{
 	display: table;
 	padding: 2% 0% 5% 0%;
 	width: 100%;
+	box-sizing: border-box;
 }
 .cardsServicos{
-	width: 90%;
+	width: 100%;
 	margin-left: 5%;
+	padding: 0% 7% 5% 4%;
 }
 
 .solucoes{
@@ -277,7 +276,7 @@ h2{
 	justify-content: space-between;
 	margin: 30px 0px 60px;
 	display: table;
-	margin-left: 10%;
+	margin-left: 11%;
 }
 
 .card{
