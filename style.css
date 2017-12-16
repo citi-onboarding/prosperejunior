@@ -1,8 +1,7 @@
-body{
+body, html{
 	width: 100%;
 	height: auto;
 	margin: 0;
-	box-sizing: border-box;
 }
 
 .nav{
@@ -92,6 +91,9 @@ label{
 
 .mySlides:not(:first-child) {display:none}
 
+body {
+	font-family: "Harabara Mais",sans-serif;
+	margin:0;
 }
 .mySlides {
 	display:none
@@ -258,36 +260,32 @@ h2{
 
 .servicos{
 	background: #092170;
-	display: table;
-	padding: 2% 0% 5% 0%;
-	width: 100%;
-	box-sizing: border-box;
+	padding: 2% 9% 5% 10%;
+    width: 100%
 }
+
 .cardsServicos{
-	width: 100%;
-	margin-left: 5%;
-	padding: 0% 7% 5% 4%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .solucoes{
 	color: white;
-	font-family: "Harabara Mais Light";
-	display: flex;
-	justify-content: space-between;
-	margin: 30px 0px 60px;
-	display: table;
-	margin-left: 11%;
+    font-family: "Harabara Mais Light";
+    margin: 30px 0px 60px;
+    margin-left: 30px;
 }
 
 .card{
-	background: white;
-	border-radius: 12px;
-	font-family: "Futura Md BT";
-	font-size: 12px;
-	padding: 2%;
-	margin-left: 3%;
-	width: 20%;
-	float: left;
+    background: white;
+    border-radius: 12px;
+    font-family: "Futura Md BT";
+    font-size: 12px;
+    padding: 20px;
+    margin-left: 2%;
+    width: 240px;
+    height: 340px;
+    flex-wrap: nowrap;
 }
 
 .icon{
@@ -312,6 +310,14 @@ h2{
 	color: white;
 	font-family: "Futura Md BT";
 	text-align: center;
+}
+
+@media only screen  and (max-width: 650px){
+	.card{
+	width: 240px;
+    height: 340px;
+    flex-wrap: nowrap;
+	}
 }
 
 .tituloMVV {
@@ -578,4 +584,3 @@ textarea{
 		width: 100%;
 	}
 }
-
