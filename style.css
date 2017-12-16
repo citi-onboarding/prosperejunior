@@ -350,10 +350,12 @@ h2{
 }
 
 .secsao5{
-	padding: 2% 8% 5% 10%;
-	display: table;
+	padding: 2% 8% 5% 5
 }
-
+.espacamento{
+	display: flex;
+	justify-content: space-between;
+}
 .fixed-bg{
 	background-image: url("imagens/background.jpg");
 	min-height: 200px;
@@ -397,6 +399,7 @@ h2{
     bottom:0;
     left:10px;
     right:10px;
+    
 } 
 .effect7:after{
     right:10px; 
@@ -415,12 +418,15 @@ h2{
 		width: 62%;
 		height: auto;
 	}
+	.espacamento{
+		display: block;
+	    margin: auto;
+	    justify-content: space-around;
+	    width: 60%
+	}
 }
 
-body{
-	width: 100%;
-	margin: 0;
-}
+
 .contato{
 	font-family: "Harabara Mais Light";
 	display: flex;
