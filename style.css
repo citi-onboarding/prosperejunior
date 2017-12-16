@@ -450,6 +450,7 @@ h2{
 }
 
 input, textarea{
+	font-family: "Harabara Mais Light";
 	display: block;
 	border-radius: 12px;
 	border-style: none;
