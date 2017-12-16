@@ -382,15 +382,17 @@ h2{
 .box {
 	width:100%;
 	margin:40px auto;
+	box-shadow: 0px 12px 36px 0px rgba(89,89,89,0.75), 0px -7px 39px 0px rgba(89, 89, 89, 1);
+	box-sizing: border-box;
 }
-.effect7{
+/*.effect7{
     position:relative;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	background: #092170;
 	background-image: url(Imagens/background1.png);
 	background-position: center;
-}
-.effect7:before, .effect7:after{
+}*/
+/*.effect7:before, .effect7:after{
 	content:"";
     position:absolute; 
     z-index: 99;
@@ -399,13 +401,13 @@ h2{
     bottom:0;
     left:10px;
     right:10px;
-    
+    */
 } 
-.effect7:after{
+/*.effect7:after{
     right:10px; 
     left:auto; 
     transform:skew(8deg) rotate(3deg);
-}
+}*/
 
 @media only screen and (max-width: 800px){
 	.secsao5{
