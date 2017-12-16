@@ -209,12 +209,9 @@ body {
 }
 
 .sobrenos {
-    display:table;
- 	align-self: center;
- 	padding: 30px 30px 10px 50px;
- 	margin: 5% 10% 5% 10%;
- 	background-color: #F2F2F2;
- 	text-align: justify;
+	padding: 30px 30px 10px 50px;
+    background-color: #F2F2F2;
+    text-align: justify;
  }
 
  .img_ej {
@@ -231,7 +228,7 @@ h2{
 }
 .quemsomos{
 	width: 100%;
-	padding: 30px 0 10px 0;
+	padding: 2% 9% 5% 12%;
 	background: white;
 }
 .oqueeaprosperejr{
@@ -260,13 +257,14 @@ h2{
 
 .servicos{
 	background: #092170;
-	padding: 2% 9% 5% 10%;
+	padding: 2% 7% 5% 10%;
     width: 100%
 }
 
 .cardsServicos{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .solucoes{
@@ -277,15 +275,13 @@ h2{
 }
 
 .card{
-    background: white;
+background: white;
     border-radius: 12px;
     font-family: "Futura Md BT";
     font-size: 12px;
-    padding: 20px;
-    margin-left: 2%;
-    width: 240px;
-    height: 340px;
-    flex-wrap: nowrap;
+    padding: 10px;
+    width: 210px;
+    height: 310px;
 }
 
 .icon{
