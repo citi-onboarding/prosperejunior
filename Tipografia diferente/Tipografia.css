@@ -1,0 +1,559 @@
+body, html{
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.nav{
+	position: relative;
+	z-index: 99;
+	border-bottom: 1px solid white;
+	background: #022170;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+	font-family: 'Comfortaa', sans-serif;
+	color: white;
+}
+.logo{
+	width: 8%;
+    position: absolute;
+    top: 12px;
+    left: 3%;
+}
+.menu{
+    margin: 0 30px 0 0;
+    position: relative;
+    z-index: 1;
+}
+.menu a{
+	clear: right;
+	text-decoration: none;
+	color: white;
+	margin: 0 10px;
+	line-height: 70px;
+}
+.titulo{
+	font-size: 20px;
+	display: none;
+}
+label{
+	margin: 0 40px 0 0;
+	font-size: 20px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+#toggle{
+	display: none;
+}
+
+@media only screen and (max-width: 650px) {
+	label{
+		display: block;
+		cursor: pointer;
+		z-index: 2; /* adicionei isso */
+    	position: relative; /* e isso */
+	}
+	.menu{
+		text-align:center;
+		width: 100%;
+		display: none;
+		position: relative;
+    	z-index: 1;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid #0754D1;
+		background: #022170;
+		margin: 0;
+		color: white;
+	}
+	.logo{
+		display: none;
+	}
+	.titulo{ 
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	}
+	#toggle:checked + .menu{
+		display: block;
+		z-index: 1; /* aqui */
+    	position: relative; /* aqui */
+	}
+}
+
+
+
+* {box-sizing:border-box}
+
+.mySlides:not(:first-child) {display:none}
+
+body {
+	font-family: 'Comfortaa',sans-serif;
+	margin:0;
+}
+.mySlides {
+	display:none
+}
+
+.slider{
+	position: relative;
+	height: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	background-size: cover;
+	height: 20%;
+  	max-width: 100%;
+  	position: relative;
+  	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: thin;
+	font-size: 60px;
+	text-shadow: 2px 2px 10px #022170;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Caption text */
+.text {
+	font-family: 'Comfortaa';
+  color: #022170;
+  font-size: 45px;
+  position: absolute;
+  padding: 0% 7% 5% 7%;
+  bottom: 25%;
+  width: 100%;
+  text-align: left;
+}
+.subtext {
+	font-family: 'Comfortaa';
+  color: #022170;
+  font-size: 20px;
+  position: absolute;
+  padding: 1% 7% 5% 7%;
+  bottom: 4%;
+  width: 100%;
+  text-align: justify;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #83b1fb;
+  opacity: 0,2;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #0754D1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  display: none;
+  animation-duration: 1.5s;
+}
+
+.mySlides{
+	height: 20%;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 650px) {
+  .prev, .next{font-size:20px;}
+  .text {font-size: 20px;}
+  .subtext{font-size: 15px;}
+  .dot{height: 10px; width: 10px; margin: 0 1px;
+  }
+}
+
+.sobrenos {
+	padding: 30px 30px 10px 50px;
+    background-color: #F2F2F2;
+    text-align: justify;
+ }
+
+ .img_ej {
+ 	float: left;
+ 	width: 35%;
+ 	height: auto;
+ 	margin-right: 30px; 
+    display:table-cell;
+ }
+
+h2{
+	font-family: 'Comfortaa';
+	color: #092170;
+}
+.quemsomos{
+	width: 100%;
+	padding: 2% 9% 5% 12%;
+	background: white;
+}
+.oqueeaprosperejr{
+ 	width: 60%;
+ 	font-family: 'Comfortaa';
+ 	font-size: 20px;
+ 	display: inline-flex;
+ }
+@media only screen and (max-width: 650px){
+	.img_ej{
+		width: 100%;
+		display: block;
+    	margin: auto;
+	}
+	.quemsomos{
+		text-align: left;
+		width: 100%;
+	}
+	.oqueeaprosperejr{
+		text-align: justify;
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
+
+.servicos{
+	background: #092170;
+	padding: 2% 7% 5% 10%;
+    width: 100%
+}
+
+.cardsServicos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.solucoes{
+	color: white;
+    font-family: 'Comfortaa';
+    margin: 30px 0px 30px;
+    margin-left: 30px;
+}
+
+.card{
+	background: white;
+    border-radius: 12px;
+    font-family: 'Questrial';
+    font-size: 12px;
+    padding: 10px;
+    width: 210px;
+    height: 310px;
+    margin: 15px 15px;
+}
+
+.icon{
+	display: block;
+	margin: auto;
+	height: 64px;
+	width: auto;
+}
+.iconContato{
+	display: block;
+	margin: auto;
+	height: 2%;
+	width: auto;
+}
+
+.botao{
+	background: #092170;
+	border-radius: 12px;
+	border-style: none;
+	width: 100%;
+	height: 60px;
+	color: white;
+	font-family: 'Questrial';
+	text-align: center;
+}
+
+@media only screen  and (max-width: 650px){
+	.card{
+	width: 240px;
+    height: 340px;
+    flex-wrap: nowrap;
+	}
+}
+
+.tituloMVV {
+	font-size: 20px;
+	font-family: 'Questrial';
+	text-align: center;
+	margin: 30px;
+}
+
+.valores {
+	background: white;
+	padding: 2% 8% 5% 10%;
+	display: table;
+
+}
+
+.missaovisaovalores {
+	background: white;
+	padding: 80px 20px 15px 25px;
+	display: table-cell;
+}
+
+.textoMVV {
+ 	text-align: justify;
+	font-size: 18px;
+	font-family: 'Questrial'
+}
+
+@media only screen  and (max-width: 650px){
+	.missaovisaovalores{
+	margin: 30px;
+    display: block;
+    position: relative;
+	}
+}
+
+.secsao5{
+	padding: 2% 9% 5% 12%;
+}
+.espacamento{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.fixed-bg{
+	background-image: url("imagens/background.jpg");
+	min-height: 200px;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.parceiros{
+    padding: 2% 2% 2% 2%;
+    background: white;
+    border-radius: 12px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.imgsecsao5{
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.box {
+	width:100%;
+	margin:40px auto;
+	box-shadow: 0px 12px 36px 0px rgba(89,89,89,0.75), 0px -7px 39px 0px rgba(89, 89, 89, 1);
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 650px){
+	.parceiros{
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
+	}
+	.espacamento{
+	margin: 20px 20px;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	}
+}
+
+
+.contato{
+	font-family: 'Comfortaa';
+	display: flex;
+	background-color: #092170;
+	padding: 2% 1% 2% 12%;
+	box-sizing: border-box;
+}
+
+.logoFormulario{
+	width: 20%;
+	display: block;
+	margin: auto;
+}
+
+.endereco{
+	width: 100%;
+	display: block;
+	margin-left: 10%;
+}
+
+.tituloContato{
+	margin-bottom: 20px;
+	font-family: 'Comfortaa';
+	display: inline-flex;
+	color: #F2F2F2;
+}
+.organizar{
+	display: block;
+    margin-bottom: 30px;
+}
+
+.iconContato{
+	height: 20px;
+	display: inline;
+}
+
+
+.textoContato{
+	display: inline;
+	color: white;
+	font-size: 15px;
+}
+
+input, textarea{
+	font-family: 'Comfortaa';
+	display: block;
+	border-radius: 12px;
+	border-style: none;
+	color: #F2F2F2;
+	width: 80%;
+	padding: 10px;
+	background-color: #0754D1;
+}
+textarea{
+	height: 80px;
+}
+
+.formulario{
+	width: 100%;
+	margin: 0% 2% 0% 2%
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+::-webkit-input-placeholder {
+   color: #F2F2F2;
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+:-moz-placeholder {
+   color: #F2F2F2;
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+::-moz-placeholder {
+   color: #F2F2F2;  
+}
+/*Propriedades para mudar a cor da letra do formulário*/
+:-ms-input-placeholder {  
+   color: #F2F2F2;  
+}
+
+.botaoformulario{
+	background: #092170;
+	border-style: solid;
+	border-radius: 12px;
+	height: 45px;
+	padding: 2% 2% 2% 2%;
+	color: white;
+	font-family: 'Questrial';
+	text-align: center;
+}
+.logocontato{
+	display: block;
+	width: 100%;
+}
+.contato1{
+	background-color: #092170;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+    align-items: flex-end;
+}
+
+.linhafooter{
+	background: white;
+	display: block;
+	margin: auto;
+	width: 80%;
+	margin-bottom: 20px;
+}
+.paragrafo{
+	display: flex;
+	align-items: flex-start;
+}
+.copyright{
+	font-family: 'Questrial';
+	font-size: 10px;
+	color: white;
+	display: inline;
+}
+.directioncolumn{
+	display: flex;
+	float: right;
+
+    align-items: flex-end;
+
+}
+
+.iconContato1{
+	height: 20px;
+	margin-left: 20px;
+	direction: column;
+
+}
+
+@media only screen and (max-width: 650px){
+	.logoFormulario{
+		display: none;
+	}
+
+	.contato{
+		display: block;
+		width: 100%
+	}
+	.endereco{
+		display: block;
+		width: 70%;
+		text-align: center;
+	}
+	.formulario{
+		display: block;
+		width: 100%;
+	}
+}
