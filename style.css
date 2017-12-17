@@ -12,7 +12,7 @@ body, html{
 	text-align: right;
 	height: 70px;
 	line-height: 70px;
-	font-family: "Harabara Mais", sans-serif;
+	font-family: "Harabara Mais",'Comfortaa', sans-serif;
 	color: white;
 }
 .logo{
@@ -92,7 +92,7 @@ label{
 .mySlides:not(:first-child) {display:none}
 
 body {
-	font-family: "Harabara Mais",sans-serif;
+	font-family: "Harabara Mais",'Comfortaa', sans-serif;
 	margin:0;
 }
 .mySlides {
@@ -138,7 +138,7 @@ body {
 
 /* Caption text */
 .text {
-	font-family: "Harabara Mais";
+	font-family: "Harabara Mais",'Comfortaa', sans-serif;
   color: #022170;
   font-size: 45px;
   position: absolute;
@@ -148,7 +148,7 @@ body {
   text-align: left;
 }
 .subtext {
-	font-family: "Harabara Mais";
+	font-family: "Harabara Mais",'Comfortaa', sans-serif;
   color: #022170;
   font-size: 20px;
   position: absolute;
@@ -223,7 +223,7 @@ body {
  }
 
 h2{
-	font-family: "Harabara Mais";
+	font-family: "Harabara Mais",'Comfortaa', sans-serif;
 	color: #092170;
 }
 .quemsomos{
@@ -233,7 +233,7 @@ h2{
 }
 .oqueeaprosperejr{
  	width: 60%;
- 	font-family: "Harabara Mais Light";
+ 	font-family: "Harabara Mais Light",'Comfortaa', sans-serif;
  	font-size: 20px;
  	display: inline-flex;
  }
@@ -269,7 +269,7 @@ h2{
 
 .solucoes{
 	color: white;
-    font-family: "Harabara Mais Light";
+    font-family: "Harabara Mais Light",'Comfortaa', sans-serif;
     margin: 30px 0px 30px;
     margin-left: 30px;
 }
@@ -277,7 +277,7 @@ h2{
 .card{
 	background: white;
     border-radius: 12px;
-    font-family: "Futura Md BT";
+    font-family: "Futura Md BT",'Questrial', sans-serif;
     font-size: 12px;
     padding: 10px;
     width: 210px;
@@ -305,7 +305,7 @@ h2{
 	width: 100%;
 	height: 60px;
 	color: white;
-	font-family: "Futura Md BT";
+	font-family: "Futura Md BT",'Questrial', sans-serif;
 	text-align: center;
 }
 
@@ -319,7 +319,7 @@ h2{
 
 .tituloMVV {
 	font-size: 20px;
-	font-family: "Futura Md BT";
+	font-family: "Futura Md BT",'Questrial', sans-serif;
 	text-align: center;
 	margin: 30px;
 }
@@ -340,7 +340,7 @@ h2{
 .textoMVV {
  	text-align: justify;
 	font-size: 18px;
-	font-family: "Futura Md BT"
+	font-family: "Futura Md BT,'Questrial', sans-serif"
 }
 
 @media only screen  and (max-width: 650px){
@@ -407,7 +407,7 @@ h2{
 
 
 .contato{
-	font-family: "Harabara Mais Light";
+	font-family: "Harabara Mais Light",'Comfortaa', sans-serif;
 	display: flex;
 	background-color: #092170;
 	padding: 2% 1% 2% 12%;
@@ -428,7 +428,7 @@ h2{
 
 .tituloContato{
 	margin-bottom: 20px;
-	font-family: "Harabara Mais";
+	font-family: "Harabara Mais",'Comfortaa', sans-serif;
 	display: inline-flex;
 	color: #F2F2F2;
 }
@@ -450,7 +450,7 @@ h2{
 }
 
 input, textarea{
-	font-family: "Harabara Mais Light";
+	font-family: "Harabara Mais Light",'Comfortaa', sans-serif;
 	display: block;
 	border-radius: 12px;
 	border-style: none;
@@ -491,7 +491,7 @@ textarea{
 	height: 45px;
 	padding: 2% 2% 2% 2%;
 	color: white;
-	font-family: "Futura Md BT";
+	font-family: "Futura Md BT",'Questrial', sans-serif;
 	text-align: center;
 }
 .logocontato{
@@ -518,7 +518,7 @@ textarea{
 	align-items: flex-start;
 }
 .copyright{
-	font-family: "Futura Md Bt";
+	font-family: "Futura Md Bt",'Questrial', sans-serif;
 	font-size: 10px;
 	color: white;
 	display: inline;
