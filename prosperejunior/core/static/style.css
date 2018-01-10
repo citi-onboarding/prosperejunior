@@ -5,7 +5,9 @@ body, html{
 }
 
 .nav{
-	position: relative;
+	position: fixed;
+	width: 100%;
+	top: 0;
 	z-index: 99;
 	border-bottom: 1px solid white;
 	background: #022170;
@@ -266,10 +268,11 @@ h2{
     width: 100%
 }
 
-.cardsServicos{
+.alinharcard{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 30px;
 }
 
 .solucoes{
@@ -285,9 +288,14 @@ h2{
     font-family: "Futura Md BT",'Questrial', sans-serif;
     font-size: 12px;
     padding: 10px;
-    width: 210px;
-    height: 310px;
+    width: 250px;
+    height: 100%;
     margin: 15px 15px;
+}
+
+.titulocard{
+	text-align: center;
+    font-family: "Futura Md BT",'Questrial', sans-serif;
 }
 
 .icon{
@@ -332,22 +340,28 @@ h2{
 .valores {
 	background: white;
 	padding: 2% 8% 5% 10%;
-	display: table;
+	display: flex;
+	justify-content: space-between;
 
 }
 
 .missaovisaovalores {
 	background: white;
 	padding: 80px 20px 15px 25px;
-	display: table-cell;
+	width: 32%;
 }
 
 .textoMVV {
  	text-align: justify;
 	font-size: 18px;
-	font-family: "Futura Md BT,'Questrial', sans-serif"
+	font-family: "Futura Md BT",'Questrial', 'sans-serif';
 }
 
+.textovalores{
+	font-size: 18px;
+	font-family: "Futura Md BT",'Questrial', 'sans-serif';
+	text-align: left;	
+}
 @media only screen  and (max-width: 650px){
 	.missaovisaovalores{
 	margin: 30px;
@@ -390,7 +404,6 @@ h2{
 
 .box {
 	width:100%;
-	margin:40px auto;
 	box-shadow: 0px 12px 36px 0px rgba(89,89,89,0.75), 0px -7px 39px 0px rgba(89, 89, 89, 1);
 	box-sizing: border-box;
 }
@@ -420,15 +433,14 @@ h2{
 }
 
 .logoFormulario{
-	width: 20%;
-	display: block;
+	width: 60%;
 	margin: auto;
 }
 
 .endereco{
 	width: 100%;
 	display: block;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 
 .tituloContato{
@@ -508,7 +520,8 @@ textarea{
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-    align-items: flex-end;
+    align-items: inline;
+    padding: 20px 20px 20px 20px;
 }
 
 .linhafooter{
@@ -518,22 +531,28 @@ textarea{
 	width: 80%;
 	margin-bottom: 20px;
 }
-.paragrafo{
-	display: flex;
-	align-items: flex-start;
+
+.alinhar{
+	display: inline-flex;
+	margin: auto;
+	width: 80%;
 }
+
+.paragrafo{
+	display: inline;
+	align-self: left;
+}
+
 .copyright{
 	font-family: "Futura Md Bt",'Questrial', sans-serif;
 	font-size: 10px;
 	color: white;
 	display: inline;
 }
+
 .directioncolumn{
 	display: flex;
-	float: right;
-
-    align-items: flex-end;
-
+	justify-content: flex-end !important;
 }
 
 .iconContato1{
