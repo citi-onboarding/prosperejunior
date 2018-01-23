@@ -51,7 +51,8 @@ label{
 	display: none;
 }
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 740px) {
 	label{
 		display: block;
 		cursor: pointer;
@@ -118,6 +119,7 @@ body {
   	max-width: 100%;
   	position: relative;
   	margin: auto;
+  	margin-top: 70px;
 }
 
 /* Next & previous buttons */
@@ -272,14 +274,14 @@ h2{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 30px;
 }
 
 .solucoes{
 	color: white;
     font-family: "Harabara Mais Light",'Comfortaa', sans-serif;
-    margin: 30px 0px 30px;
+    margin: 60px 0px 30px;
     margin-left: 30px;
+
 }
 
 .card{
@@ -320,12 +322,13 @@ h2{
 	color: white;
 	font-family: "Futura Md BT",'Questrial', sans-serif;
 	text-align: center;
+	text-decoration: none !important;
 }
 
-@media only screen  and (max-width: 650px){
+@media only screen  and (max-width: 740px){
 	.card{
 	width: 240px;
-    height: 340px;
+    height: 100%;
     flex-wrap: nowrap;
 	}
 }
@@ -348,7 +351,7 @@ h2{
 .missaovisaovalores {
 	background: white;
 	padding: 80px 20px 15px 25px;
-	width: 32%;
+    width: 326px;
 }
 
 .textoMVV {
@@ -367,6 +370,13 @@ h2{
 	margin: 30px;
     display: block;
     position: relative;
+    width: 326px;
+	}
+
+	.valores{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	}
 }
 

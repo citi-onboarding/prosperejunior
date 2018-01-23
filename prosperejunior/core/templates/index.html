@@ -14,14 +14,15 @@
 			<input type="checkbox" id="toggle">
 			<div class="menu">
 				<div class="titulo">Prospere JR.</div>
-				<a href="#home">Home</a>
-				<a href="#sobrenos">Sobre nós</a>
-				<a href="#servicos">Serviços</a>
-				<a href="#valores">Valores</a>
-				<a href="#parceiros">Parceiros</a>
-				<a href="#contato">Contato</a>
+				<a  onclick="getCurrentYPosiion(); initScroll('home'); return false" href="#">Home</a>
+				<a onclick="getCurrentYPosiion(); initScroll('sobrenos'); return false" href="#">Sobre nós</a>
+				<a onclick="getCurrentYPosiion(); initScroll('servicos'); return false" href="#">Portifólio de serviços</a>
+				<a onclick="getCurrentYPosiion(); initScroll('valores'); return false" href="#">Valores</a>
+				<a onclick="getCurrentYPosiion(); initScroll('parceiros'); return false" href="#">Parceiros</a>
+				<a onclick="getCurrentYPosiion(); initScroll('contato'); return false" href="#">Contato</a>
 			</div>
 		</div>
+		<a id="home"></a>
 			<div class="slideshow-container">
 				<div class="mySlides fade">
 				  <img src="imagens/slider1.jpg" class="imgslider">
@@ -44,15 +45,15 @@
 
 		<br>
 
-		<a name="sobre nos"></a>
-				<a id="sobre nos"></a>
+		<a name="sobrenos"></a>
+				<a id="sobrenos"></a>
 		<div class="quemsomos">
 			<div class="sobrenos">
 				<img src="Imagens/ej.jpg" class="img_ej" alt="Foto da equipe Prospere Júnior">
 				<h2 class="sobreaprospere">QUEM SOMOS NÓS?</h2>
 				<p class="oqueeaprosperejr">A Prospere, empresa de consultoria júnior da Universidade Federal do Vale do São Francisco,	formada por estudantes do curso de Administração, com o objetivo de promover uma oportunidade prática aos seus colaboradores junto com a satisfação de seus clientes.
 					<br>
-				Atuamos na Região do Vale do São Francisco (Petrolina e Juazeiro), realizando projetos voltados ao âmbito empresarial, para aprimorar e auxiliar nossos clientes para que alcancem o sucesso.</p>	
+				Atuamos na Região do Vale do São Francisco (Petrolina e Juazeiro), realizando projetos voltados ao âmbito empresarial, para aprimorar e auxiliar nossos clientes para que alcancem o sucesso.</p>
 			</div>
 		</div>
 		
@@ -67,7 +68,7 @@
 						<h4 class="titulocard">Diagnóstico Organizacional <br> GP</h4>
 						<p class="textocard">A avaliação do Clima Organizacional é feita por meio de pesquisas, estudos e censo junto ao público interno. Com objetivo de identificar os aspectos críticos que afetam a motivação dos funcionários da empresa.
 						</p>
-						<button class="botao">INVISTA DA SUA EMPRESA</button>
+						<a onclick="getCurrentYPosiion(); initScroll('contato'); return false" href="#"><button class="botao">ENTRE EM CONTATO</button></a>
 					</div>
 					<div class="card">
 						<img src="Imagens/icon2.png" alt="Imagem representando projetos" class="icon">
@@ -75,7 +76,7 @@
 						<h4 class="titulocard">Pesquisa de Mercado <br> PROJETOS</h4>
 						<p class="textocard">A pesquisa de mercado tem por objetivo a coleta de dados e informações sobre determinado mercado, que irão auxiliar nas tomadas de decisão, administração e rumos da empresa.
 						</p>
-						<button class="botao">INVISTA DA SUA EMPRESA</button>
+						<a onclick="getCurrentYPosiion(); initScroll('contato'); return false" href="#"><button class="botao">ENTRE EM CONTATO</button></a>
 					</div>
 					<div class="card">
 						<img src="Imagens/icon3.png" alt="Imagem representando marketing" class="icon">
@@ -83,7 +84,7 @@
 						<h4 class="titulocard">Modelagem de Negócios <br> PROJETOS</h4>
 						<p class="textocard">Foca a validação de um modelo de negócio ou um produto específico frente às demandas do mercado e do público-alvo.
 						</p>
-						<button class="botao">INVISTA DA SUA EMPRESA</button>
+						<a onclick="getCurrentYPosiion(); initScroll('contato'); return false" href="#"><button class="botao">ENTRE EM CONTATO</button></a>
 					</div>
 				</div>
 				<div class="alinharcard">
@@ -93,7 +94,7 @@
 						<h4 class="titulocard">Controle/Fluxo de Caixa <br> FINANCEIRO</h4>
 						<p class="textocard">Instrumento gerencial que controla e informa todas as movimentações financeiras, como entradas e saídas de valores em determinado período.
 						</p>
-						<button class="botao">INVISTA DA SUA EMPRESA</button>
+						<a onclick="getCurrentYPosiion(); initScroll('contato'); return false" href="#"><button class="botao">ENTRE EM CONTATO</button></a>
 					</div>
 					<div class="card">
 						<img src="Imagens/icon15.svg" alt="Imagem representando avaliação de atendimento" class="icon">
@@ -101,7 +102,7 @@
 						<h4 class="titulocard">Avaliação de Atendimento <br> Marketing</h4>
 						<p class="textocard">Identifica os pontos de melhoria ligados ao atendimento e elaboração de possíveis soluções para as empresas.
 						</p>
-						<button class="botao">INVISTA DA SUA EMPRESA</button>
+						<a onclick="getCurrentYPosiion(); initScroll('contato'); return false" href="#"><button class="botao">ENTRE EM CONTATO</button></a>
 					</div>
 					<div class="card">
 						<img src="Imagens/icon16.svg" alt="Imagem representando avaliação de satisfação do cliente" class="icon">
@@ -109,7 +110,7 @@
 						<h4 class="titulocard">Avaliação de Satisfação do Cliente <br> Marketing</h4>
 						<p class="textocard">Mensura os níveis de satisfação do cliente para com processos, produtos e serviços ou outras dimensões, apresentando informações necessárias para identificação dos pontos de melhoria e de possíveis ações para corrigi-los.
 						</p>
-						<a href="#contato"><button class="botao">INVISTA DA SUA EMPRESA</button></a>
+						<a onclick="getCurrentYPosiion(); initScroll('contato'); return false" href="#"><button class="botao">ENTRE EM CONTATO</button></a>
 					</div>
 				</div>
 			</div>
@@ -158,8 +159,8 @@
 				</div>
 			</div>
 		</div>
+
 		<a id="contato"></a>
-		
 				<div class="contato">
 			<div class="logoFormulario"><img src="Imagens/logo.png" class="logocontato" alt="Logo Prospere Júnior"></div>
 			<div class="endereco">
@@ -196,6 +197,7 @@
 			</div>
 		
 		<script type="text/javascript">
+
 var btn = document.getElementById('button');
 btn.onclick = function() {
   var menu = document.getElementById('navbar');
@@ -219,7 +221,9 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
+
       slides[i].style.display = "none"; 
+
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
@@ -227,6 +231,73 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+var marginY = 0;
+var destination = 0;
+var speed = 15;
+var scroller = null;
+var sinal = 1;
+
+function getCurrentYPosiion(){
+		var doc = document.documentElement;
+		marginY = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+}
+
+function initScroll(elementId){
+	destination = document.getElementById(elementId).offsetTop;
+	
+	scroller=setTimeout(function(){
+			initScroll(elementId);
+	}, 1);
+
+	if (Math.abs(marginY - destination) > speed) {
+		if (marginY - speed > destination) {
+			marginY = marginY - speed;
+		} else if(marginY + speed < destination) {
+			marginY = marginY + speed;	
+		}
+	}
+
+	if (Math.abs(marginY - destination) <= speed) {
+		clearTimeout(scroller);
+		scroller = null;
+	} 
+
+	window.scroll(0, marginY);
+
+	//console.log(destination);
+}
+
+/*document.getElementsByTagName('button')[0].onclick = function () {
+   scrollTo(document.body, 0, 1250);   
+}
+    
+function scrollTo(element, to, duration) {
+    var start = element.scrollTop,
+        change = to - start,
+        currentTime = 0,
+        increment = 20;
+        
+    var animateScroll = function(){        
+        currentTime += increment;
+        var val = Math.easeInOutQuad(currentTime, start, change, duration);
+        element.scrollTop = val;
+        if(currentTime < duration) {
+            setTimeout(animateScroll, increment);
+        }
+    };
+    animateScroll();
+}
+
+
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d/2;
+	if (t < 1) return c/2*t*t + b;
+	t--;
+	return -c/2 * (t*(t-2) - 1) + b;
+};*/
+
+
 		</script>
 
 
